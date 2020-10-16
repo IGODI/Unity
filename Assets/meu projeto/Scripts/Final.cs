@@ -9,6 +9,7 @@ public class Final : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             print("Parabens por completar a fase");
+            
         }
     }
 }

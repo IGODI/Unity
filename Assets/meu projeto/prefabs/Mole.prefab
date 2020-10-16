@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8302804929153064408}
   - component: {fileID: 8302804929153064409}
   - component: {fileID: 8302804929153064358}
-  - component: {fileID: -5305321389410155333}
+  - component: {fileID: 3261727375579658404}
   m_Layer: 10
   m_Name: Mole
   m_TagString: Untagged
@@ -51,7 +51,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -160,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 1}
---- !u!114 &-5305321389410155333
+--- !u!114 &3261727375579658404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8302804929153064359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba4a9d6af669184f9035f66702cf773, type: 3}
+  m_Script: {fileID: 11500000, guid: 63fd03eb382fe4d4dade63cc92b76cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
@@ -184,3 +183,4 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
+  checkin: 0
