@@ -13,11 +13,12 @@ public class Butao : MonoBehaviour
     void Start()
     {
         botao = GameObject.Find("Play").GetComponent<Button>();
+        botao.onClick.AddListener(Iniciodejogo);
     }
 
     private void Update()
     {
-        botao.onClick.AddListener(Iniciodejogo);
+        
     }
 
     public void Iniciodejogo()
