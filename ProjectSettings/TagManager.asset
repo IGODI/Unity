@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GM
   - Check Point
+  - Shot
+  - Boss
   layers:
   - Default
   - TransparentFX

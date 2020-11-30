@@ -18,6 +18,9 @@ public class PlayerShoot : MonoBehaviour
     private PlayerMovement playerMovement;
     private Animator animator;
 
+    public AudioSource audioSource;
+    public AudioClip ShootingAudioClip;
+
 
 
     void Start()
@@ -45,7 +48,7 @@ public class PlayerShoot : MonoBehaviour
         }
     }
     void Shoot()
-    {
+    {      
         if (Time.time < nextFire)
             return;
 
@@ -53,6 +56,8 @@ public class PlayerShoot : MonoBehaviour
 
         nextFire = Time.time + fireRate;
         Rigidbody2D newShot = Instantiate(shot, shotSpawner.position, Quaternion.identity);
+        audioSource.PlayOneShot(ShootingAudioClip);
+
         newShot.velocity = Vector2.right * shotSpeed * playerMovement.direction;
 
         newShot.transform.localScale *= charging;

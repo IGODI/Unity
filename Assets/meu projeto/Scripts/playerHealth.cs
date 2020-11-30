@@ -14,6 +14,10 @@ public class playerHealth : Demageable
         base.Start();
         defaulfLayer = gameObject.layer;
     }
+    private void Update()
+    {
+        UiManager.instance.UpdateHealthBarPlayerInBoss(currentHealth);
+    }
     public override void Death()
     {
 
@@ -40,7 +44,7 @@ public class playerHealth : Demageable
         }
         else
         {
-            UiManager.instance.UpdateHealthBar(currentHealth);
+            UiManager.instance.UpdateHealthBar(currentHealth);           
             gameObject.layer = 11; //camada de invencibilidade
         }
     }
